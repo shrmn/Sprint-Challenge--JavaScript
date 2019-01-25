@@ -30,13 +30,26 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+> Map creates a new array.
+
 2. What is the difference between a function and a method?
+
+> A method is associated with an object.
 
 3. What is closure?
 
+> A closure is a scope chain. It has access to its own scope, to outer function's variables, and to global variables.
+
 4. Describe the four rules of the 'this' keyword.
 
+* 1. By default, "this" binds to the Window. That means the value of "this" will be the Window Object.
+* 2. Implicit binding means "this" will be whatever called it. So, with example.this, "this" becomes "example".
+* 3. When using a constructor function, "this" becomes the name of the function created.
+* 4. When using call or apply, "this" becomes the name of whatever is called/applied. e.g. If you reference a variable, the variale name becomes "this"
+
 5. Why do we need super() in an extended class?
+
+> super() tells a parent constructor to pay attention to the child's attributes, and makes Object.create(this, Class) unnecessary (or, well, does it for us).
 
 ## Project Set up
 
@@ -46,10 +59,10 @@ Follow these steps to set up and work on your project:
 - [x] Add PM as collaborator on Github.
 - [x] Clone your OWN version of Repo (Not Lambda's by mistake!).
 - [x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [x] You are now ready to build this project with your preferred IDE
+- [x] Implement the project on your Branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
